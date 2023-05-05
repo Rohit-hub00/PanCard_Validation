@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <!-- CSS -->
+        <link rel="stylesheet" href="pan.css">
+                
+        <!-- Boxicons CSS -->
+        <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+                        
+    </head>
+    <body>
+        <section class="container">
+	<div class="form">
+                <div class="form-content">
+                    <header>Pan Card Validation</header>
+                    <form action="#">
+                        <div class="name">
+                            <input type="text" placeholder="Firstname" class="fname" id="fname">
+			    
+			    <input type="text" placeholder="Lastname" class="fname" id="lname">
+                        </div>
+			<div class="dropdown">
+			     <select name="type" id="pan">
+  				<option value="" disabled selected hidden class="disabled"><-- Pan Card Type --></option>
+  				<option value="Personal">Personal</option>
+  				<option value="Foreigners">Foreigners</option>
+  				<option value="Company">Company</option>
+				<option value="Business">Buiness</option>
+			     </select>
+			</div>
+                        <div class="field input">
+                            <input type="text" placeholder="Pancard number" class="password" id="panNo" maxlength="10" size="10">
+                        </div>
+
+			<div class="field button">
+                            <button onclick="validate()">Validate</button>
+                        </div>
+                    </form>
+
+		</div>
+	</div>
+	</section>
+
+        <!-- JavaScript -->
+        <script src="pan.js"></script>
+    </body>
+</html>
